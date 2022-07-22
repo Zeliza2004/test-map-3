@@ -1,7 +1,9 @@
 L.mapbox.accessToken = "pk.eyJ1IjoiY2FudWVsIiwiYSI6ImNsNXc1cWV0aDA4MTkza3BpOXBrZTB1bnEifQ.xVXOiIFqSZOy0tvJG7fd7w";
 
+var sg = [49.24364394977767, 0.5848411810456078];
+
 // création de la map
-var map = L.map('map').setView([49.260379791259766, 0.5880005955696106], 6);
+var map = L.map('map').setView(sg, 6);
 
 // création du calque image
 L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=' 
@@ -11,7 +13,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{
 }).addTo(map);
 
 //ajout d'un marqueur
-var marker = L.marker([49.260379791259766, 0.5880005955696106]).addTo(map);
+var marker = L.marker(sg).addTo(map);
 
 
 
